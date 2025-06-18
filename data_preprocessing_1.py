@@ -162,7 +162,7 @@ def drop_col(df, droped_col):
 
 
 
-df = pd.read_csv('df_1000.csv')  #　放原始資料
+df = pd.read_csv('training.csv')  #　放原始資料
 df_process = drop_9000(df)
 df_process, droped_col = drop_na(df_process)
 df_process = one_hot_encode(df_process)
@@ -176,7 +176,7 @@ df_process['飆股'] = col
 df_process.to_csv('df_process.csv', index=False)
 print('final features len:',len(df_process.columns))
 
-df = pd.read_csv('Public_Test/public_x_100.csv')  #　放原始資料
+df = pd.read_csv('public_x.csv')  #　放原始資料
 df_process = drop_9000(df)
 df_process = drop_col(df_process, droped_col)
 df_process = one_hot_encode(df_process)
