@@ -11,7 +11,7 @@ This repository contains the code for our Statistical Consulting Project, submit
 ### Modeling:
 - stage1_ML_engineer.py: Implements a LightGBM classifier with tuned parameters, 10-fold stratified cross-validation, and threshold optimization (0.1 to 1.0) to maximize F1 score, serving as the baseline model.
 - stage2_stacking_LR.py: Builds a stacking ensemble using three LightGBM models (on technical, non-technical, and all features) and a Logistic Regression meta-model, optimized via Optuna for AUPRC.
-- stage3_base_XGB.py: Trains XGBoost models on all combinations of three feature categories ("上市范樓", "技術指慣", "其他") with 5-fold cross-validation, using a weighted ensemble based on AUPRC.
+- stage3_base_XGB.py: Trains XGBoost models on all combinations of three feature categories with 5-fold cross-validation, using a weighted ensemble based on AUPRC.
 
 ## Requirements
 Install dependencies: pip install -r requirements.txt
