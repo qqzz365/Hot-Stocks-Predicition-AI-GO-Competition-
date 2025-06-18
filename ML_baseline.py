@@ -19,9 +19,9 @@ warnings.filterwarnings('ignore')
 
 # 載入資料 (請修改路徑)
 print("開始載入資料")
-df_train = pd.read_csv("/home/arthur/AI/datasets/training.csv")
-df_test = pd.read_csv("/home/arthur/AI/datasets/public_x.csv")
-df_submission = pd.read_csv("/home/arthur/AI/datasets/submission_template_public.csv")
+df_train = pd.read_csv("training.csv")
+df_test = pd.read_csv("public_x.csv")
+df_submission = pd.read_csv("submission_template_public.csv")
 print("載入完成")
 
 # 設置中文字體支援 (保留原有函數)
